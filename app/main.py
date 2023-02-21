@@ -17,11 +17,6 @@ def ordenaDicFrec(dicFrec):
 
 
 
-@app.get("/")
-def root():
-    return {'Hello': 'World'}
-
-
 @app.get('/get_max_duration')
 def get_max_duration(anio:int, platform:str, type:str): 
     data = pd.read_csv('https://raw.githubusercontent.com/NicoGit333/Prueba_PI01/main/df_data.csv')
